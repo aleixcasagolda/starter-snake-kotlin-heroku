@@ -28,3 +28,19 @@ Simply run `./gradlew run` to run your snake. IntelliJ Idea will also automatica
 Eventually you might want to deploy to a server.
 You can use `./gradlew build` to create a "fat jar", then run the artifact using `java -jar build\libs\YourNameHere-1.0.jar`
 Alternatively, you can use the convenient distributions inside of `build/distributions`.
+
+## Deploy to Heroku
+
+### Create an app in Heroku
+
+`hreoku create appname`
+
+### After commit, push your changes to the heroku repo
+
+`git push heroku`
+
+### Get logs from the running service
+
+`heroku logs` <- to see the latest logs
+
+`heroku logs --tail` <- to tail the logs
