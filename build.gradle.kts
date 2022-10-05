@@ -54,6 +54,10 @@ tasks {
     }
 }
 
+tasks.register("stage") {
+    dependsOn("jar")
+}
+
 // Allows you to run using gradlew
 // Specifies the main class we specified earlier
 application {
